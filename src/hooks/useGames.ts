@@ -12,7 +12,8 @@ export interface Games {
   background_image: string;
   id: number;
   name: string;
-  parent_platforms: { platform: Platform }[]
+  parent_platforms: { platform: Platform }[];
+  metacritic: number;
 }
 
 interface ApiResponse {
