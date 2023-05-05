@@ -1,6 +1,5 @@
 import { SimpleGrid, Text } from "@chakra-ui/react";
-import useGames, { Platform } from "../hooks/useGames";
-import { Genres } from "../hooks/useGenres";
+import useGames from "../hooks/useGames";
 import { GameQuery } from "../App";
 import GameCard from "./GameCard";
 import GameCardSkeleton from "./GameCardSkeleton";
