@@ -16,7 +16,7 @@ const GenreList = ({ onSelectedGenre, selectedGenre }: Props) => {
     <List>
       {data.map((genre) => (
         <ListItem onClick={() => onSelectedGenre(genre)} key={genre.id}>
-          <HStack marginY={5}>
+          <HStack marginBottom={4}>
             <Image
               boxSize={12}
               borderRadius={10}

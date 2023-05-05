@@ -8,6 +8,7 @@ import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
 import PlatformFilter from "./components/PlatformFilter";
 import SortSelector from "./components/SortSelector";
+import GameGridHeading from "./components/GameGridHeading";
 
 export interface GameQuery {
   genre: Genres | null;
@@ -45,7 +46,8 @@ const App = () => {
         </GridItem>
       </Show>
 
-      <GridItem area={"main"}>
+      <GridItem  area={"main"}>
+        <GameGridHeading gameQuery={gameQuery} />
         <Flex marginBottom={8}>
           <Box marginRight={5}>
             <PlatformFilter

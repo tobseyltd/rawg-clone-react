@@ -9,7 +9,7 @@ interface Props {
 
 const NavBar = ({ onSearch }: Props) => {
   return (
-    <HStack spacing={6} alignItems={"center"}>
+    <HStack marginBottom={5} spacing={6} alignItems={"center"}>
       <Image src={Logo} boxSize={59}></Image>
       <SearchBar onSearch={onSearch} />
       <ColorModeSwitch />
