@@ -1,6 +1,6 @@
-# Expense Tracker
+# rawg.io clone
 
-> LIVE VERSION: https://sprightly-chaja-fef021.netlify.app/
+> LIVE VERSION: https://rawg-clone-react.vercel.app/
 
 ## Table of contents
 
@@ -15,20 +15,22 @@
 
 Users should be able to:
 
-- Submit and delete Expenses
-- Filter by Category
-- See a summary of their expenses
+- Filter by Genre / Platform
+- Sort by Relevance / Date Added / Name / Release Date / Popularity / Averag Rating
+- Search Games 
+- Switch Dark Mode
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Chakra CSS library
+- Mobile First
 - Flexbox
 - CSS Grid
 
 - [React](https://reactjs.org/) - JS library
 - [Vite.js](https://vitejs.dev/) - React framework
-- [Bootstrap](https://getbootstrap.com/) - For styles
+- [Chakra](https://chakra-ui.com/) - For styles
 - [Typescript](https://www.typescriptlang.org/) - For Logic
