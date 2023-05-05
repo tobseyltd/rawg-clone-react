@@ -16,8 +16,9 @@ const PlatformFilter = ({ onSelectedPlatform, selectedPlatform }: Props) => {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDoubleDown />}>
-       {selectedPlatform?.name || 'Platforms'}
+        {selectedPlatform?.name || "Platforms"}
       </MenuButton>
+
       <MenuList>
         {data.map((platform) => (
           <MenuItem
