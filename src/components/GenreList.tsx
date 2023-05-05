@@ -1,4 +1,12 @@
-import { HStack, Image, Link, List, ListItem, Spinner } from "@chakra-ui/react";
+import {
+  HStack,
+  Heading,
+  Image,
+  Link,
+  List,
+  ListItem,
+  Spinner,
+} from "@chakra-ui/react";
 import useGenres, { Genres } from "../hooks/useGenres";
 import getCroppedImages from "../services/CroppedGameCardImages";
 
@@ -14,12 +22,16 @@ const GenreList = ({ onSelectedGenre, selectedGenre }: Props) => {
   if (isLoading) return <Spinner />;
   return (
     <List>
+      <Heading as='h2' fontSize='xl' marginTop={2} marginBottom={5}>
+        Genres
+      </Heading>
       {data.map((genre) => (
         <ListItem onClick={() => onSelectedGenre(genre)} key={genre.id}>
           <HStack marginBottom={4}>
             <Image
-              boxSize={12}
+              boxSize='40px'
               borderRadius={10}
+              objectFit='cover'
               src={getCroppedImages(genre.image_background)}
             />
             <Link

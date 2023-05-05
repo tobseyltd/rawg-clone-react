@@ -4,7 +4,7 @@ import {
   InputLeftElement,
   InputRightElement,
 } from "@chakra-ui/react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { BsSearch, BsX } from "react-icons/bs";
 
 interface Props {
