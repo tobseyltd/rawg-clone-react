@@ -18,7 +18,7 @@ const GameCard = ({ games }: Props) => {
         />
 
         <CardBody>
-          <Heading size={"lg"}>{games.name}</Heading>
+          <Heading size={"md"}>{games.name}</Heading>
 
           <HStack
             justifyContent={"space-between"}
